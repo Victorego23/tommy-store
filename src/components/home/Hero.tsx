@@ -1,14 +1,15 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import hero from '../../assets/hero.png';
 
 export const Hero = () => {
   return (
     <div className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1555529771-835f59bfc50c?w=1600&q=80" 
-          alt="Streetwear Culture" 
+        <img
+          src={hero}
+          alt="Streetwear Culture"
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
